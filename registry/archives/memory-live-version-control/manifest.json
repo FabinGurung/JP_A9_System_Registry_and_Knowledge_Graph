@@ -22,5 +22,14 @@
     "original_source_ids_preserved": true,
     "final_main_verification": "PENDING",
     "status": "POST_CAPTURED_AFTER_FEATURE_REGISTRY_SUCCESS"
+  },
+  "thesis_latex_extension": {
+    "ordinal": "000003",
+    "pre_path": "registry/archives/memory-live-version-control/000003_PRE_THESIS_LATEX_LIVE_ID_POSTER.json",
+    "post_path": "registry/archives/memory-live-version-control/000003_POST_THESIS_LATEX_LIVE_ID_POSTER.json",
+    "reason": "Thesis-specific PDF/ZIP/Docs stable IDs and incremental manuscript sequence",
+    "original_source_path": "registry/curations/memory-live-version-control.v0.1.json",
+    "status": "FEATURE_PR_PENDING_CI",
+    "private_ids_not_published": true
   }
 }

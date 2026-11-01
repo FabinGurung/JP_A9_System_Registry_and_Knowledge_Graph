@@ -74,7 +74,7 @@
       "name": "Excel / PDF / CAD / other Drive files",
       "live": "Original provider file ID plus appropriate revision/hash",
       "archive": "Enumerated complete copies in dedicated archive with extension retained",
-      "qualification": "File conversion may lose semantics; keep provider permissions and domain-specific approval gates."
+      "qualification": "File conversion may lose semantics; keep provider permissions and domain-specific approval gates. Thesis LaTeX files use three independent permanent Drive IDs (PDF, complete source ZIP, native Google Doc) plus canonical Git source path. PRE/POST numbered snapshots and a manuscript LATEX_SEQ are separate. Keep native Doc status distinct from the compiled source version."
     },
     {
       "name": "GitHub code / JSON / website",
@@ -105,5 +105,16 @@
   "safety": "Applies to subjects whose owning A7/A9 policy requires enumerated archival. Do not create unbounded duplicate copies for unrelated Git commits, change Google document IDs, destroy revisions, expose private file IDs on public Pages, override original access controls, or claim cross-provider automation is deployed. Where provider-copy semantics differ, record the method and any limitation instead of asserting an exact replica.",
   "implementation": "REFERENCE_ONLY_NOT_EXECUTED_ON_GOOGLE_PROVIDER",
   "originals_preserved": true,
-  "derived_presentation_non_authoritative": true
+  "derived_presentation_non_authoritative": true,
+  "thesis_latex_example": {
+    "scope": "Reusable public governance, not an individual researcher's private work",
+    "base": "LATEX_SEQ061 already exists in the same live Drive PDF, ZIP and Google Doc identities",
+    "next": "Create 000008_PRE from SEQ061; make scoped edits in the original LaTeX tree; compile LATEX_SEQ062; update existing PDF and ZIP Drive IDs; validate provider readback and save 000008_POST; preserve an honest native Doc status separately.",
+    "no_private_provider_ids": true,
+    "source_continuity": "Reuse the canonical populated source tree and modify only affected TeX files; don't generate a truncated new thesis package or migrate to a different live file.",
+    "rollback": "Restore selected PRE bytes INTO the same permanent Drive IDs and source paths with a new audited revision.",
+    "thesis_live_artifact_rule": "One original permanent Google Drive ID each for compiled PDF, complete LaTeX source ZIP and native editable Google Doc; canonical LaTeX code path is versioned in Git",
+    "thesis_snapshot_rule": "Before the next meaningful numbered scientific/manuscript change, copy the current populated PDF/ZIP/Doc into matching numbered PRE records. Build and validate the next LATEX_SEQxxx. Replace raw PDF/ZIP bytes inside the SAME existing Drive IDs; update the original native Doc in place only after preserving its PRE. Capture matching POST copies and append source, hashes, QA and restoration records.",
+    "thesis_qa_rule": "Manuscript sequence, snapshot ordinal, Google Docs native revision and Git commit SHA are distinct. Never create a new live ID for a routine sequence; never label unchanged or older native Google Doc as current. Retain all figures, references and scientific source files unless an expressly authorized scoped edit requires them. Approval and PDF/Doc visual parity are separate release gates."
+  }
 }
